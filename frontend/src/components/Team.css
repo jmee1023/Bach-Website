@@ -1,0 +1,51 @@
+/* Team.css */
+
+/* Define CSS variables */
+:root {
+    --team-member-size: 300px; /* Increased size */
+    --team-member-gap: 20px;
+    --team-member-shadow: rgba(0, 0, 0, 0.2);
+    --team-member-heading-size: 18px;
+    --team-member-text-color: #888;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--team-member-gap);
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: var(--team-member-size);
+    height: auto; /* Allow height to adjust proportionally */
+    border-radius: 10px; /* Not circular anymore */
+    box-shadow: 0 4px 8px var(--team-member-shadow);
+    transition: transform 0.3s ease-in-out;
+}
+
+.team-member h3 {
+    margin-top: 15px;
+    font-size: var(--team-member-heading-size);
+    color: white;
+}
+
+.team-member p {
+    margin-top: 5px;
+    color: var(--team-member-text-color);
+    font-size: 14px;
+}
+
+.team-member p.description {
+    margin-top: 10px;
+}
