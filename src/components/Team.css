@@ -1,0 +1,39 @@
+/* Team.css */
+
+/* Define CSS variables */
+:root {
+    --team-member-size: 150px;
+    --team-member-gap: 20px;
+    --team-member-shadow: rgba(0, 0, 0, 0.2);
+    --team-member-heading-size: 18px;
+    --team-member-text-color: #888;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--team-member-gap);
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: var(--team-member-size);
+    height: var(--team-member-size);
+    border-radius: 50%;
+    box-shadow: 0 4px 8px var(--team-member-shadow);
+}
+
+.team-member h3 {
+    margin-top: 10px;
+    font-size: var(--team-member-heading-size);
+}
+
+.team-member p {
+    margin-top: 5px;
+    color: var(--team-member-text-color);
+}

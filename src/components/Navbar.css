@@ -1,0 +1,36 @@
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent dark background */
+    padding: 10px 20px;
+    color: #fff;
+    backdrop-filter: blur(10px); /* Adds a blurred effect to the background */
+  }
+  
+  .left-links a,
+  .right-icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: transform 0.3s ease; /* Add a transition effect */
+  }
+  
+  .left-links a:hover,
+  .right-icons a:hover {
+    transform: scale(1.1); /* Enlarge the link on hover */
+  }
+  
+  
+  .right-icons img {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    transition: transform 0.3s ease; /* Add a transition effect */
+  }
+  
+  .right-icons img:hover {
+    transform: scale(1.5); /* Enlarge the icon on hover */
+  }

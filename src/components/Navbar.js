@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import ig from '../resources/instagram.svg'
 import twitter from '../resources/twitter.svg'
 import tiktok from '../resources/tiktok.svg'
@@ -7,7 +8,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="left-links">
-                <a href="/about">Meet The Team</a>
+                <Link to="/team">Meet the Team</Link>
                 <a href="/blog">Blog</a>
                 <a href="/contact">Contact Us</a>
             </div>
