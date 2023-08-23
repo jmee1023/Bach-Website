@@ -1,38 +1,130 @@
-.App {
+/* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #222, #111); /* Dark gradient background */
+  color: #fff;
+}
+
+header, section, footer {
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background: linear-gradient(to bottom, #333, #222); /* Dark gradient background */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.services, .contact-form {
+  background: linear-gradient(to bottom, #333, #222); /* Dark gradient background */
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+form {
+  margin-top: 10px;
+}
+
+label, input, textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+footer {
+  background: linear-gradient(to bottom, #333, #222); /* Dark gradient background */
+  color: #fff;
+}
+
+/* App.css */
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Margin between components */
+}
+
+/* Navbar styles */
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent dark background */
+  padding: 10px 20px;
+  color: #fff;
+  backdrop-filter: blur(10px); /* Adds a blurred effect to the background */
 }
 
-.App-link {
-  color: #61dafb;
+.left-links a,
+.right-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  transition: transform 0.3s ease; /* Add a transition effect */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-links a:hover,
+.right-icons a:hover {
+  transform: scale(1.1); /* Enlarge the link on hover */
+}
+
+
+.right-icons img {
+  width: 40px;
+  height: 40px;
+  margin-left: 20px;
+  transition: transform 0.3s ease; /* Add a transition effect */
+}
+
+.right-icons img:hover {
+  transform: scale(1.5); /* Enlarge the icon on hover */
 }
