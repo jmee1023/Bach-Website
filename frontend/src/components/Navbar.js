@@ -10,8 +10,8 @@ const Navbar = () => {
             <div className="left-links">
                 <Link to="/">Home</Link>
                 <Link to="/team">Meet the Team</Link>
-                <a href="/blog">Blog</a>
-                <a href="/contact">Contact Us</a>
+                <Link to="/blog">Blog</Link>
+                <Link to="/contact">Contact Us</Link>
             </div>
             <div className="right-icons">
                 <a href="https://www.instagram.com">

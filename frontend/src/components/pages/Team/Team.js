@@ -1,7 +1,7 @@
 import React from 'react';
 import './Team.css'
-import randy from '../resources/Randy.PNG'
-import jack from '../resources/Jack.jpeg'
+import randy from '../../../resources/Randy.PNG'
+import jack from '../../../resources/Jack.jpeg'
 
 const Team = () => {
     return (

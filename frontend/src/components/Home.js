@@ -3,7 +3,7 @@ import ImageDescription from './ImageDescription';
 import Navbar from './Navbar';
 import testImage from '../resources/test.jpg'
 import pool from '../resources/pool.jpg'
-import Team from './Team';
+import Team from './pages/Team/Team';
 
 const Home = () => {
     return (

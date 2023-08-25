@@ -1,0 +1,35 @@
+/* Blog.css */
+
+.blog {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  .blog-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  /* BlogPost.css */
+  
+  .blog-post {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .blog-author {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .blog-content {
+    line-height: 1.6;
+  }
+  
